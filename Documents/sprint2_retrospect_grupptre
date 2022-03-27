@@ -1,0 +1,46 @@
+Sprint 2 Retrospect möte 28.9.2021
+Grupptre
+
+
+Färdiga user stories för sprint 2:
+
+CASH3 Nicola och Alexander
+CASH6 Iréne
+CUST5 Hanna
+CUST6 Kasper
+
+Janina har lagat JarOpener, HTTPRequest och XMLParser klasser
+Hanna har lagat cashier och customer window UI
+
+
+User Stories som förs till backloggen:
+
+CASH2 behöver barcode scanner före implementering
+CASH5 behöver mera tid
+
+
+Problem:
+
+Vi fick inte först öppnat Jar filerna ordentligt via programmet, men Kasper fixade det :-)
+Svårt att veta vad man ska lägga in för string i HTTPRequest funktionerna så att det ska funka
+Svårighet med i vilken ordning funktioner ska köras
+
+
+Lärdomar:
+
+Vi har lärt oss hur programmet fungerar ihop bättre samt hur man gör test
+
+
+Förbättringar:
+
+Flytta ut servern till ett annat projekt så att det inte är så kaos
+
+
+Alla färdiga user stories:
+
+CUST1
+CUST2
+CASH3 
+CASH6 
+CUST5 
+CUST6 

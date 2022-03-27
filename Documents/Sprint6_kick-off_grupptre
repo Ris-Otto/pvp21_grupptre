@@ -1,0 +1,30 @@
+Sprint 6 kick-off möte - grupptre
+
+21.10.2021
+
+User stories som ingår i sprinten:
+
+SALE1
+
+SALE3
+
+MARK1
+
+DoD för varje user story:
+
+SALE1: Det ska finnas en databas som innehåller alla produkter, var man kan sätta pris till dem. Alla våra funktioner far via databasen och inte produktkatalogen, så att priserna definieras med samma.
+
+SALE3: En försäljare kan se hur många produkter som har sålts på en viss dag eller inom ett visst tidsintervall.
+
+MARK1: Man ska kunna få fram informationen om mest populär/minst populär som sålts under en viss tidsperiod
+
+
+Uppdelning av tasks:
+
+SALE1 - Nicola, Alexander, Kasper
+
+SALE3 - Irene & Hanna & Janina
+
+MARK1 - Irene & Hanna & Janina
+
+Kasper fortsätter med Databasen

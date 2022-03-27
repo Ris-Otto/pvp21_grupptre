@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ap" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controlmatic.PoS_System.CustomerWindowController">
+    <SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16">
+        <AnchorPane minHeight="0.0" minWidth="0.0">
+            <SplitPane dividerPositions="0.7353678929765888" orientation="VERTICAL" prefHeight="600.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="315.0" prefWidth="455.0">
+                    <MenuBar>
+                        <Menu text="File">
+                            <MenuItem text="Shelf Sale" onAction="#shelfSale" />
+                            <MenuItem text="Retrieve Sale" onAction="#unShelfSale" />
+                        </Menu>
+                    </MenuBar>
+                    <Text layoutX="130.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cashier" />
+                    <ListView fx:id="cashierProductsList" layoutX="60.0" layoutY="64.0" onMouseClicked="#selectListItem" prefHeight="200.0" prefWidth="168.0" />
+                    <ScrollBar layoutX="207.0" layoutY="64.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="15.0" />
+                    <Text layoutX="57.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total sum:" wrappingWidth="67.33333333333326" />
+                    <TextField fx:id="discountField" layoutX="256.0" layoutY="130.0" prefHeight="25.0" prefWidth="132.0" promptText="Discount (percentage)" />
+                    <TextField fx:id="barcodeField" layoutX="256.0" layoutY="64.0" prefHeight="25.0" prefWidth="132.0" promptText="Product Barcode" />
+                    <Button fx:id="barcodeScanner" layoutX="324.0" layoutY="164.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="25.0" prefWidth="59.0" text="Add" />
+               <TextField fx:id="totalSumCashier" editable="false" layoutX="125.0" layoutY="281.0" prefHeight="25.0" prefWidth="87.0" />
+                    <Button fx:id="removeProduct" layoutX="324.0" layoutY="198.0" mnemonicParsing="false" onAction="#removeProduct" text="Remove" />
+               <TextField fx:id="nameField" layoutX="256.0" layoutY="98.0" prefHeight="25.0" prefWidth="132.0" promptText="Product Name" />
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="76.0" prefWidth="328.0">
+                </AnchorPane>
+            </SplitPane>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="655.0" prefWidth="441.0">
+            <SplitPane dividerPositions="0.7" orientation="VERTICAL" prefHeight="600.0" prefWidth="900.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0">
+                    <ListView fx:id="customerProductsList" layoutX="116.0" layoutY="38.0" onMouseClicked="#selectListItem" prefHeight="200.0" prefWidth="168.0" />
+                    <Text layoutX="123.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" />
+                    <ScrollBar layoutX="268.0" layoutY="38.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="15.0" />
+                    <TextField fx:id="totalSumCustomer" editable="false" layoutX="178.0" layoutY="245.0" prefHeight="25.0" prefWidth="89.0" />
+                    <Text layoutX="106.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total sum:" wrappingWidth="67.33333333333326" />
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <Button fx:id="split" layoutX="12.0" layoutY="76.0" mnemonicParsing="false" onAction="#CreatePaymentRequest" text="Split payment" />
+                    <Button fx:id="card" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#CreatePaymentRequest" text="Pay with card" />
+                    <Button fx:id="cash" layoutX="13.0" layoutY="45.0" mnemonicParsing="false" onAction="#CreatePaymentRequest" text="Pay with cash" />
+                </AnchorPane>
+            </SplitPane>
+        </AnchorPane>
+    </SplitPane>
+</AnchorPane>

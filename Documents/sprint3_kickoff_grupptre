@@ -1,0 +1,50 @@
+Sprint 3 Kick-off möte 28.9.2021
+Grupptre
+
+
+Preamble:
+
+Vi planerar att implementera följande user stories:
+
+CASH5
+CUST3
+SALE1
+CASH4
+CASH7
+CASH2
+
+
+Definition of Done:
+
+CASH5: Det skall vara möjligt att se resultatet av en kortbetalning, alltså ska man kunna se om
+betalningen gått igenom eller avbrutits. Det skall även gå att se hur stor summa som har dragits av
+betalningskortet.
+
+CUST3: Under försäljningens gång bör kunden kunna ta bort produkter som kunden
+inte redan betalat för och sätta till produkter så länge som hela betalningen
+inte gått igenom.
+
+SALE1: Det ska finnas en databas som innehåller alla produkter, var man kan sätta pris till dem.
+Alla våra funktioner far via databasen och inte produktkatalogen, så att prisena definieras med samma.
+
+CASH4: Det ska vara möjligt att lägga till saker till köpet från produktkatalogen. Man ska kunna söka på 
+namn och barcode.
+
+CASH7: En vara kan ha ett bäst före datum. Beroende på hur nära datumet man är ändrar rabatten. Det ska gå
+att lägga till rabatten manuellt. Slutliga priset på varan ska sedan räknas automatiskt.
+
+CASH2: Det skall vara möjligt att skanna en produkts streckkod. Osäkert ännu hur streckkoden ser ut
+men på något sätt ska de vara möjligt. Varorna skall kunna adderas också till varukorgen då varan
+blir skannad.
+
+
+Uppdelning:
+
+CASH5 Janina
+CUST3 Hanna
+SALE1 Kasper
+CASH7 Iréne
+CASH4 Alexander + Nicola
+CASH2 Alexander + Nicola
+Kasper lagar EventListener
+Kasper delar upp servern och klienten
